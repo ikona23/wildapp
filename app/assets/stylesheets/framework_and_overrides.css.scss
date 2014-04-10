@@ -9,7 +9,9 @@
   font-weight: normal;
   color: white;
   padding: 0 15px; }
-
+//.top-bar {
+// background-color: #34495e;
+//}
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create mixins using Foundation classes
 @mixin twelve-columns {
@@ -40,8 +42,9 @@
 // to make views framework-neutral
 main {
   @include twelve-columns;
-  background-color: #27ae60;
+  background-color: #ecf0f1;
   }
+
 section {
   @extend .row;
   margin-top: 20px;
@@ -90,3 +93,8 @@ section {
   @extend .radius;
   @extend .tiny;
 }
+.panel {
+  background-color: #f39c12;
+  border-style: none;
+}
+
