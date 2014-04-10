@@ -98,7 +98,7 @@ section {
   border-style: none;
 }
 footer {
-
-  background-color:black;
+  @include twelve-columns;
+  background-color: #2c3e50;
 }
 
