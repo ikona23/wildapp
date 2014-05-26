@@ -1,0 +1,28 @@
+<div class="authform">
+<%= simple_form_for(@post) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+
+    <%= f.label :Title %>
+    <%= f.text_field :title %>
+
+    <%= f.label :Explain_your_problem %>
+    <%= f.text_field :description %>
+    <%= f.input :owner %>
+    <%= f.input :parking %>
+    <%= f.input :urgency %>
+    <%= f.input :budget %>
+    <%= f.input :quote %>
+    <%= f.input :how_did_you_here_about_us %>
+    <%= f.input :publish_date %>
+    <%= f.input :user_id %>
+    <%= f.association :categories %>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'button radius right' %>
+  </div>
+      </div>
+<% end %>

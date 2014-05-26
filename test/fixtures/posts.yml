@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  owner: false
+  parking: false
+  urgency: false
+  budget: 1
+  quote: false
+  how_did_you_here_about_us: MyString
+  publish_date: 2014-05-05
+  user_id: 1
+
+two:
+  title: MyString
+  description: MyText
+  owner: false
+  parking: false
+  urgency: false
+  budget: 1
+  quote: false
+  how_did_you_here_about_us: MyString
+  publish_date: 2014-05-05
+  user_id: 1

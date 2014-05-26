@@ -1,0 +1,56 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @post.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @post.description %>
+</p>
+
+<p>
+  <strong>Owner:</strong>
+  <%= @post.owner %>
+</p>
+
+<p>
+  <strong>Parking:</strong>
+  <%= @post.parking %>
+</p>
+
+<p>
+  <strong>Urgency:</strong>
+  <%= @post.urgency %>
+</p>
+
+<p>
+  <strong>Budget:</strong>
+  <%= @post.budget %>
+</p>
+
+<p>
+  <strong>Quote:</strong>
+  <%= @post.quote %>
+</p>
+
+<p>
+  <strong>How did you here about us:</strong>
+  <%= @post.how_did_you_here_about_us %>
+</p>
+
+<p>
+  <strong>Publish date:</strong>
+  <%= @post.publish_date %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @post.user_id %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_post_path(@post) %>
+<%= link_to 'Back', posts_path %>

@@ -42,7 +42,7 @@
 // to make views framework-neutral
 main {
   @include twelve-columns;
-  background-color: #ecf0f1;
+//  background-color: black;
   }
 
 section {
@@ -68,15 +68,6 @@ section {
 .authform form p {
   font-size: rem-calc(13);
 }
-.authform .form-group {
-  // for Bootstrap, not used for Foundation
-}
-.authform .form-control {
-  // for Bootstrap, not used for Foundation
-}
-.authform .checkbox {
-  // for Bootstrap, not used for Foundation
-}
 .authform fieldset {
   @include panel();
 }
@@ -97,15 +88,102 @@ section {
   background-color: white;
   border-style: none;
 }
+body{
+  margin: 0;
+}
 footer {
   @include twelve-columns;
   background-color: #2c3e50;
+  color:white;
+  bottom: 0px;
+  left: 0px;
 }
 .fullWidth {
   width: 100%;
-  height: 400px;
+  height: 920px;
   margin-left: auto;
   margin-right: auto;
   max-width: initial;
 }
+
+
+
+// boxes
+.grid {
+  padding:0px 0px 50px 0px;
+  max-width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+}
+
+.grid li {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.grid figure {
+  margin: 0;
+  position: relative;
+}
+
+.grid figure img {
+  max-width: 100%;
+  display: block;
+  position: relative;
+}
+
+.grid figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  background: #2c3f52;
+  color: #ed4e6e;
+}
+
+.grid figcaption h3 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.grid figcaption span:before {
+  content: 'by ';
+}
+
+.grid figcaption a {
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 2px;
+  display: inline-block;
+  background: #ed4e6e;
+  color: #fff;
+}
+
+@media screen and (max-width: 31.5em) {
+  .grid {
+    padding: 10px 10px 100px 10px;
+  }
+  .grid li {
+    width: 100%;
+    min-width: 300px;
+  }
+}
+
+.opa:hover {
+    opacity: 1;
+  }
+
+.opa {
+  opacity: 0.7;
+}
+//
+//.top-bar {
+//  background-color: red;
+//}
 

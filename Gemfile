@@ -15,10 +15,12 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'devise'
+gem 'cancan'
 gem 'foundation-rails'
 gem 'pg'
 gem 'simple_form'
 gem 'thin'
+gem 'protected_attributes'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :mri_21, :rbx]

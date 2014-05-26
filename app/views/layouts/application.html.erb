@@ -12,34 +12,34 @@
   </head>
   <body>
     <header>
+<!--render top navigation bar-->
+     <nav class="top-bar">
       <%= render 'layouts/navigation' %>
+
+     </nav>
+<!--render layout message if login is successfull or not -->
     </header>
-    <main role="main">
+   <section>
        <%= render 'layouts/messages' %>
        <%= yield %>
-    </main>
+   </section>
+<!--render footer layout-->
+    <footer>
+      <%= render 'layouts/footer' %>
+      </ul>
+    </footer>
+
+
+    <!-- Included JS Files (Compressed) -->
+    <script src="jquery.js"></script>
+    <script src="foundation.min.js"></script>
+    <script src="stickyFooter.js"></script>
+
+    <script src="javascripts/jquery.foundation.orbit.js"></script>
+
+    <!-- Initialize JS Plugins -->
+    <script src="app.js"></script>
   </body>
+
 </html>
-
-
-<!-- Footer -->
-<footer>
-
-  <div class="large-12 columns">
-    <hr />
-    <div class="row">
-      <div class="large-6 columns">
-        <p>© renomania.co.nz</p>
-      </div>
-      <div class="large-6 columns">
-        <ul class="inline-list right">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Faq</a></li>
-          <li><a href="#">Terms and Conditions</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
 

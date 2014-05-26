@@ -1,4 +1,14 @@
 <%# add navigation links to this file %>
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href=", root_path"><img src="/assets/images/logoreno.png" /></h1>
+    </li>
+    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+  <li><%= link_to 'About', root_path %></li>
+  <li><%= link_to 'Contact', root_path %></li>
 <% if user_signed_in? %>
   <li><%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %></li>
 <% else %>
@@ -12,3 +22,14 @@
 <% if user_signed_in? %>
   <li><%= link_to 'Users', users_path %></li>
 <% end %>
+<% if user_signed_in? %>
+    <li><%= link_to 'View you posted jobs', posts_path %></li>
+<% end %>
+<% if user_signed_in? %>
+    <li><%= link_to 'Categories', categories_path %></li>
+<% end %>
+<% if user_signed_in? %>
+    <li><%= link_to 'Post new job', new_post_path %></li>
+<% end %>
+
+</nav>
