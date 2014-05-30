@@ -28,4 +28,7 @@ group :development do
   gem 'quiet_assets'
   gem 'rails_layout'
   gem 'rails_12factor', group: :production
+  gem 'high_voltage'
 end
+
+gem "mocha", group: :test
