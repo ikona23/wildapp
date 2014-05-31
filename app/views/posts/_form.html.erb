@@ -9,15 +9,20 @@
 
     <%= f.label :Explain_your_problem %>
     <%= f.text_field :description %>
+    <%= f.label :Are_you_homeowner? %>
     <%= f.input :owner %>
+    <%= f.label :Are_you_homeowner? %>
     <%= f.input :parking %>
+    <%= f.label :Are_you_homeowner? %>
     <%= f.input :urgency %>
+    <%= f.label :What_is_your_budget? %>
     <%= f.input :budget %>
+    <%= f.label :Do_you_want_us_to_send_quote? %>
     <%= f.input :quote %>
     <%= f.input :how_did_you_here_about_us %>
-    <%= f.input :publish_date %>
+    <!--<%= f.input :publish_date %>-->
     <%= f.input :user_id %>
-    <%= f.association :categories %>
+    <%= f.association :categories, :as => :check_boxes %>
 
   </div>
 

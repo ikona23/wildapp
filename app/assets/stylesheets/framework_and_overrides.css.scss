@@ -105,10 +105,6 @@ footer {
   margin-right: auto;
   max-width: initial;
 }
-
-
-
-
 .opacity:hover {
     opacity: 1;
   }
@@ -120,4 +116,21 @@ footer {
 //.top-bar {
 //  background-color: red;
 //}
+
+navigation ul li {
+  color: red;
+  font-weight: bold;
+
+}
+
+footer a {
+  color: #269BC8;
+  &:visited {
+    color: blue;
+  }
+  &:hover {
+    color: #006895;
+//    background-color: green;
+  }
+}
 

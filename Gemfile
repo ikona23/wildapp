@@ -29,6 +29,7 @@ group :development do
   gem 'rails_layout'
   gem 'rails_12factor', group: :production
   gem 'high_voltage'
+  gem 'letter_opener'
 end
 
 gem "mocha", group: :test

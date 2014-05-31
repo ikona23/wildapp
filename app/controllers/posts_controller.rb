@@ -49,6 +49,7 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = Post.new(params[:post])
+    # linkig post to user
     @post.user_id = current_user.id
 
     respond_to do |format|
