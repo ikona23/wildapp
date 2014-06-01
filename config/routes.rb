@@ -3,7 +3,7 @@ Dream::Application.routes.draw do
   resources :posts
 
   resources :categories
-  resources :pages
+
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)

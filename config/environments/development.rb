@@ -33,8 +33,17 @@ Rails.application.configure do
       :user_name => ENV["MANDRILL_USERNAME"],
       :password  => ENV["MANDRILL_APIKEY"]
     }
+
+  config.action_mailer.smtp_settings = {
+      address: "smtp.gmail.com",
+      port: 587,
+      authentication: "plain",
+      enable_starttls_auto: true,
+      user_name: ENV["GMAIL_USERNAME"],
+      password: ENV["GMAIL_PASSWORD"]
+  }
   # ActionMailer Config
-  config.action_mailer.default_url_options = { :host => 'http://quiet-forest-9419.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.action_mailer.delivery_method = :letter_opener
   config.action_mailer.raise_delivery_errors = true
   # Send email in development mode?
