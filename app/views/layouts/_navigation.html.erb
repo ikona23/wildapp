@@ -1,7 +1,7 @@
 <%# navigation styled for Zurb Foundation 5 %>
 <nav class="top-bar" data-topbar>
   <ul class="title-area">
-    <!--<li class="name"><%= link_to 'Home', root_path %></li>-->
+
     <!--<li class="name">-->
     <li class="name"><a href="root_path"><img src="../assets/images/logoreno.png"/>
     </li>
@@ -10,8 +10,10 @@
 
   <div class="top-bar-section">
     <ul>
-  <!--<li class="name"><%#= link_to 'About', page_path("about_us")%></li>-->
-      <li class="name"><%= link_to 'Contact Us', root_path %></li>
+      <li class="name"><%= link_to 'About us', static_pages_about_path%></li>
+      <li class="name"><%= link_to 'Contact us', static_pages_contact_path%></li>
+      <li class="name"><%= link_to 'Privacy', static_pages_privacy_path%></li>
+      <li class="name"><%= link_to 'Faq', static_pages_faq_path%></li>
       <%= render 'layouts/navigation_links' %>
     </ul>
   </div>
