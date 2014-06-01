@@ -1,20 +1,23 @@
 <%# navigation styled for Zurb Foundation 5 %>
 <nav class="top-bar" data-topbar>
   <ul class="title-area">
-
     <!--<li class="name">-->
-    <li class="name"><a href="root_path"><img src="../assets/images/logoreno.png"/>
+    <li class="name"><a href="root_path"> <%= image_tag "../assets/images/logoreno.png" %>
     </li>
   </ul>
     <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-
   <div class="top-bar-section">
     <ul>
+
+      <!--links to static pages about_us,contact privacy and Faq, with path-->
       <li class="name"><%= link_to 'About us', static_pages_about_path%></li>
       <li class="name"><%= link_to 'Contact us', static_pages_contact_path%></li>
       <li class="name"><%= link_to 'Privacy', static_pages_privacy_path%></li>
       <li class="name"><%= link_to 'Faq', static_pages_faq_path%></li>
+
+      <!--rendering layout from layouts/navigation_links it renders links based on role-->
       <%= render 'layouts/navigation_links' %>
+
     </ul>
   </div>
 </nav>

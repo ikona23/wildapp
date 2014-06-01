@@ -14,10 +14,13 @@
     <header>
 <!--render top navigation bar-->
      <!--<nav class="top-bar">-->
+
       <%= render 'layouts/navigation' %>
+
      <!--</nav>-->
 <!--render layout message if login is successfull or not -->
     </header>
+
    <section>
        <%= render 'layouts/messages' %>
        <%= yield %>
@@ -25,17 +28,12 @@
 <!--render footer layout-->
     <footer>
       <%= render 'layouts/footer' %>
-
     </footer>
-
-
     <!-- Included JS Files (Compressed) -->
     <script src="jquery.js"></script>
     <script src="foundation.min.js"></script>
     <script src="stickyFooter.js"></script>
-
     <script src="javascripts/jquery.foundation.orbit.js"></script>
-
     <!-- Initialize JS Plugins -->
     <script src="app.js"></script>
   </body>

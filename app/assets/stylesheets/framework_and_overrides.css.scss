@@ -108,9 +108,8 @@ footer {
 .opacity:hover {
     opacity: 1;
   }
-
 .opacity {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 //
 //.top-bar {
@@ -126,11 +125,20 @@ navigation ul li {
 footer a {
   color: #269BC8;
   &:visited {
-    color: blue;
+    color: white;
   }
   &:hover {
     color: #006895;
 //    background-color: green;
   }
+}
+
+header {
+
+  background-color: red;
+}
+
+button {
+  backgroun-color: red;
 }
 
