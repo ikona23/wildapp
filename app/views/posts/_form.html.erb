@@ -1,28 +1,31 @@
 <div class="authform">
+
 <%= simple_form_for(@post) do |f| %>
   <%= f.error_notification %>
+     <p><img src="/assets/images/logoreno.png" /> </p>
+      <div class="form-inputs">
 
-  <div class="form-inputs">
-
-    <%= f.label :Title %>
-    <%= f.text_field :title %>
+    <!--<%= f.label :Title %>-->
+    <!--<p>  <%= f.text_field :title %></p>-->
 
     <%= f.label :Explain_your_problem %>
-    <%= f.text_field :description %>
+    <p><%= f.text_field :description %></p>
     <%= f.label :Are_you_homeowner? %>
-    <%= f.input :owner %>
-    <%= f.label :Are_you_homeowner? %>
-    <%= f.input :parking %>
-    <%= f.label :Are_you_homeowner? %>
-    <%= f.input :urgency %>
+    <p><%= f.input :owner %></p>
+    <%= f.label :Do_you_have_parking? %>
+    <p><%= f.input :parking %></p>
+    <%= f.label :Is_it_urgent? %>
+    <p><%= f.input :urgency %></p>
     <%= f.label :What_is_your_budget? %>
-    <%= f.input :budget %>
+    <p><%= f.input :budget %></p>
     <%= f.label :Do_you_want_us_to_send_quote? %>
-    <%= f.input :quote %>
+    <p><%= f.input :quote %></p>
+    <%= f.label :Post_photo_of_your_problem %>
+    <p> <%= f.file_field :photo %></p>
     <%= f.input :how_did_you_here_about_us %>
     <!--<%= f.input :publish_date %>-->
     <%= f.input :user_id %>
-    <%= f.association :categories, :as => :check_boxes %>
+    <%= f.association :categories %>
 
   </div>
 

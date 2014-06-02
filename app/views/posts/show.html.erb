@@ -1,4 +1,6 @@
+<img src="/assets/images/logoreno.png" />
 <p id="notice"><%= notice %></p>
+
 
 <p>
   <strong>Title:</strong>
@@ -26,12 +28,12 @@
 </p>
 
 <p>
-  <strong>Budget:</strong>
+  <strong>What is your budget?:</strong>
   <%= @post.budget %>
 </p>
 
 <p>
-  <strong>Quote:</strong>
+  <strong>Do you wish to make a quote?:</strong>
   <%= @post.quote %>
 </p>
 
@@ -40,11 +42,14 @@
   <%= @post.how_did_you_here_about_us %>
 </p>
 
+<!--<p>-->
+  <!--<strong>Publish date:</strong>-->
+  <!--<%= @post.publish_date %>-->
+<!--</p>-->
 <p>
-  <strong>Publish date:</strong>
-  <%= @post.publish_date %>
+  <strong>This is photo  of your problem:</strong>
+  <%= image_tag  @post.photo.url %>
 </p>
-
 <p>
   <strong>User:</strong>
   <%= @post.user_id %>

@@ -22,6 +22,9 @@ gem 'simple_form'
 gem 'thin'
 gem 'mail_form'
 gem 'protected_attributes'
+gem 'paperclip', github: 'thoughtbot/paperclip'
+
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :mri_21, :rbx]
@@ -30,6 +33,7 @@ group :development do
   gem 'rails_layout'
   gem 'rails_12factor', group: :production
   gem 'letter_opener'
+  gem 'carrierwave'
 end
 
 group :development, :test do
