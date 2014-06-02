@@ -114,7 +114,6 @@ GEM
     has_scope (0.6.0.rc)
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
-    high_voltage (2.1.0)
     hike (1.2.3)
     hub (1.12.0)
     i18n (0.6.9)
@@ -140,6 +139,9 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    mail_form (1.5.0)
+      actionmailer (>= 3.2, < 5)
+      activemodel (>= 3.2, < 5)
     metaclass (0.0.4)
     mime-types (1.25.1)
     minitest (5.3.2)
@@ -237,11 +239,11 @@ DEPENDENCIES
   foreman
   formtastic!
   foundation-rails
-  high_voltage
   hub
   jbuilder (~> 2.0)
   jquery-rails
   letter_opener
+  mail_form
   mocha
   pg
   polyamorous!

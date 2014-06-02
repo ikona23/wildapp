@@ -20,6 +20,7 @@ gem 'foundation-rails'
 gem 'pg'
 gem 'simple_form'
 gem 'thin'
+gem 'mail_form'
 gem 'protected_attributes'
 group :development do
   gem 'better_errors'
@@ -28,7 +29,6 @@ group :development do
   gem 'quiet_assets'
   gem 'rails_layout'
   gem 'rails_12factor', group: :production
-  gem 'high_voltage'
   gem 'letter_opener'
 end
 
