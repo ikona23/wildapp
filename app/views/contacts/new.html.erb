@@ -1,7 +1,11 @@
-<div align="center">
-  <h3>Send A message to Us</h3>
+<div class="authform">
+  <h5 class="title"><a href="#panel1">Contact Our Company</a></h5>
 
   <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+      <div class="12-large-columns">
+        <p><img src="/assets/images/logoreno.png"/></p>
+      </div>
+
       <%= f.input :name, :required => true %>
       <%= f.input :email, :required => true %>
       <%= f.input :message, :as => :text, :required => true %>
@@ -10,7 +14,9 @@
       </div>
       <div>
         </br>
-        <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+        <%= f.button :submit, 'Send message', :class=> 'button radius' %>
       </div>
   <% end %>
 </div>
+
+
