@@ -1,7 +1,7 @@
 class Post < ActiveRecord::Base
 
-  validates_presence_of :description
-
+  # validates_presence_of :description
+  # attr_accessible :title, :description, :urgency, :budget, :owner, :parking, :quote, :how_did_you_here_about_us, :parking, :publish_date, :category_ids, :photo
   attr_accessible :title, :description, :urgency, :budget, :owner, :parking, :quote, :how_did_you_here_about_us, :parking, :publish_date, :category_ids, :photo
 
   belongs_to :user

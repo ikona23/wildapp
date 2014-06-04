@@ -1,14 +1,14 @@
 class CategoriesController < InheritedResources::Base
   class CategoriesController < ApplicationController
     before_filter :authenticate_user!, :except => [:show,:index]
+    # before_filter :authenticate_user!, :except => [:show,:index]
     load_and_authorize_resource
 
 
     # GET /categories
     # GET /categories.json
+
     def index
-
-
       respond_to do |format|
         format.html # index.html.erb
         format.json { render json:@categories }
@@ -18,8 +18,6 @@ class CategoriesController < InheritedResources::Base
     # GET /categories/1
     # GET /categories/1.json
     def show
-
-
       respond_to do |format|
         format.html # show.html.erb
         format.json { render json:@category }
@@ -29,8 +27,6 @@ class CategoriesController < InheritedResources::Base
     # GET /categories/new
     # GET /categories/new.json
     def new
-
-
       respond_to do |format|
         format.html # new.html.erb
         format.json { render json:@category }
@@ -45,8 +41,6 @@ class CategoriesController < InheritedResources::Base
     # POST /categories
     # POST /categories.json
     def create
-
-
       respond_to do |format|
         if @category.save
           format.html { redirect_to @category, notice:'Category was successfully created.' }
@@ -61,7 +55,6 @@ class CategoriesController < InheritedResources::Base
     # PUT /categories/1
     # PUT /categories/1.json
     def update
-
       respond_to do |format|
         if @category.update_attributes(params[:category])
           format.html { redirect_to @category, notice => 'Category was successfully updated.' }
@@ -76,9 +69,7 @@ class CategoriesController < InheritedResources::Base
     # DELETE /categories/1
     # DELETE /categories/1.json
     def destroy
-
       @category.destroy
-
       respond_to do |format|
         format.html { redirect_to categories_url }
         format.json { head :no_content }
