@@ -33,7 +33,7 @@ group :development do
   gem 'rails_layout'
   gem 'rails_12factor', group: :production
   gem 'letter_opener'
-  gem 'carrierwave'
+
 end
 
 group :development, :test do

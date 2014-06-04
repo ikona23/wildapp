@@ -11,3 +11,4 @@ class Post < ActiveRecord::Base
   validates_attachment_content_type :photo, :content_type => %w(image/jpeg image/jpg image/png image/gif)
 
 end
+

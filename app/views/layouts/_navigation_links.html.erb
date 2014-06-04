@@ -9,6 +9,8 @@
   <!--</ul>-->
 
 <% if user_signed_in? %>
+
+
   <li><%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %></li>
 <% else %>
   <li><%= link_to 'Login', new_user_session_path %></li>
@@ -18,19 +20,44 @@
 <% else %>
   <li><%= link_to 'Sign up', new_user_registration_path %></li>
 <% end %>
+
+<!--if you sign in as bussines -->
+
+<!--<% if user_signed_in? %>-->
+    <!--<% if current_user.is_vendor? %>-->
+  <!--<li><%= link_to 'Users', users_path %></li>-->
+<!--<% end %>-->
+   <!--<% end %>-->
+<!--if you sign in as bussines -->
+
 <% if user_signed_in? %>
-  <li><%= link_to 'Users', users_path %></li>
+    <% if current_user.is_vendor? %>
+    <li><%= link_to 'View posted jobs', posts_path %></li>
 <% end %>
+    <% end %>
+
+<!--if you sign in as bussines -->
+
+<!--<% if user_signed_in? %>-->
+    <!--<% if current_user.is_vendor? %>-->
+    <!--<li><%= link_to 'Categories', categories_path %></li>-->
+    <!--<% end %>-->
+<!--<% end %>-->
+
+<!--if you sign in as customer -->
+
 <% if user_signed_in? %>
-    <li><%= link_to 'View you posted jobs', posts_path %></li>
-<% end %>
-<% if user_signed_in? %>
-    <li><%= link_to 'Categories', categories_path %></li>
-<% end %>
-<% if user_signed_in? %>
+    <% if current_user.is_customer? %>
     <li><%= link_to 'Post new job', new_post_path %></li>
+ <% end %>
 <% end %>
 
-</nav>
+<% if user_signed_in? %>
+    <% if current_user.is_customer? %>
+        <li><%= link_to 'View your posted jobs', posts_path %></li>
+    <% end %>
+<% end %>
+
+
 
 <!--<img src="/assets/images/logoreno.png" />-->
