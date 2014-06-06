@@ -31,9 +31,9 @@ group :development do
   gem 'hub', :require=>nil
   gem 'quiet_assets'
   gem 'rails_layout'
-  gem 'rails_12factor', group: :production
+  # gem 'rails_12factor', group: :production
   gem 'letter_opener'
-
+  gem 'rails_12factor'
 end
 
 group :development, :test do
