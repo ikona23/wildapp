@@ -36,8 +36,8 @@ group :development do
 
 end
 
-group :development, :test do
-  gem 'foreman'
-end
+# group :development, :test do
+#   gem 'foreman'
+# end
 
 gem "mocha", group: :test
