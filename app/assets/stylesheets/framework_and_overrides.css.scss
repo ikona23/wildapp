@@ -94,7 +94,7 @@ body{
 }
 footer {
   @include twelve-columns;
-  background-color: #2c3e50;
+  background-color: #2D2D2D;
   color:white;
   bottom: 0px;
   left: 0px;
@@ -126,21 +126,21 @@ navigation ul li {
 footer a {
   color: #269BC8;
   &:visited {
-    color: white;
+    color:#006699;
   }
   &:hover {
-    color: yellow;
+    color: white;
 //    background-color: green;
   }
 }
 
 header {
 
-  background-color: red;
+  background-color: #3399CC;
 }
 
 button {
-  backgroun-color: red;
+  backgroun-color:  #3399CC;
 }
 
 .hidden { display: none; }
@@ -177,21 +177,6 @@ button {
 .top-bar .name {
   color: white;
 }
-
-#head {
-  background-color: #3399CC;
-}
-#head * {
-  color: white;
-}
-#about {
-  bacground-color: white;
-}
-#tweeter {
-  background-color: #006699;
-  padding: 20px;
-  margin: 0;
-}
 .bmargin {
   margin-bottom: 80px;
 }
@@ -216,22 +201,47 @@ button {
 h2 {
   font-weight: 200;
 }
+#head {
+  background-color: #3399CC;
+}
+#head * {
+  color: white;
+}
+#headred {
+  background-color: #c0392b;
+}
+#headred * {
+  color: white;
+}
+
+#tweeter {
+  background-color: #006699;
+  padding: 20px;
+  margin: 0;
+}
 #gray{
   background-color: #34495e;
   color: white;
+  color: white;
 }
-#faq{
-  background-color: #567694;
+#contact{
+  background-color: #34495e;
   color: white;
 }
 
 #green{
-  background-color:#5C7A7C;
+  background-color:#34495e;
+  color: white;
+}
+#green * {
   color: white;
 }
 #dgreen{
-  background-color: #C44D58;
+  background-color:white;
   color: white;
+}
+#dgreen * {
+  color:black;
 }
 .nowrap{
   white-space: no;
@@ -255,7 +265,7 @@ h2 {
    height: 0;
    border-style: solid;
    border-width: 30px 35px 0 35px;
-   border-color: #5C7A7C transparent transparent transparent;
+   border-color: #34495e transparent transparent transparent;
    position: absolute;
    left: 47%;
    //  margin: auto;
@@ -273,12 +283,12 @@ h2 {
   //  bottom :-20px;
 }
 
-.down-triangle-green {
+.down-triangle-icon {
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 30px 35px 0 35px;
-  border-color: #C44D58 transparent transparent transparent;
+  border-color: #34495e transparent transparent transparent;
   position: absolute;
   left: 47%;
   //  margin: auto;
@@ -298,10 +308,51 @@ body, html
 {
   height: 100%;
 }
-
 .top-bar-section ul li>a {
-  background-color:#34495e;
+  background-color:#0F0F0F;
+  text-align:center;
 }
+.h4color h4 {
+  color:white;
+}
+.circle {
+  border-radius: 1000px;
+  border: 12px solid blanchedalmond;
+}
+.inline {
+  display: inline-block;
+}
+p {
+  font-size: 90%;
+  line-height: 1.8em;
+}
+.icon-single {
+  opacity: 0.7;
+  position: relative;
+}
+#icons {
+  background-color: #34495e;
+}
+.icon-single:hover {
+  top:-10px;
+  opacity:0.9;
+}
+.trans {
+  -webkit-transition: all 0.3s cubic-bezier(0,.91,.43,.98);
+  -moz-transition: all 0.3s cubic-bezier(0,.91,.43,.98);
+  -ms-transition: all 0.3s cubic-bezier(0,.91,.43,.98);
+  -o-transition: all 0.3s cubic-bezier(0,.91,.43,.98);
+  transition: all 0.3s cubic-bezier(0,.91,.43,.98);
+}
+
+#red {
+  background-color: red;
+}
+
+
+
+
+
 
 
 
