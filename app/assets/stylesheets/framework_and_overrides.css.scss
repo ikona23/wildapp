@@ -130,7 +130,7 @@ header {
 
   background-color: #3399CC;
 }
-
+.row {min-width:100% !important;}
 button {
   backgroun-color:  #3399CC;
 }
@@ -304,6 +304,10 @@ body, html
   background-color:#0F0F0F;
   text-align:center;
 }
+.top-bar {
+  width: 100%;
+}
+
 .h4color h4 {
   color:white;
 }
@@ -339,6 +343,10 @@ p {
 
 #red {
   background-color: red;
+}
+.row.full-width {
+  width: 100%;
+  max-width: 100%;
 }
 
 
