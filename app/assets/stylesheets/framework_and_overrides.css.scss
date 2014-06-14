@@ -200,7 +200,7 @@ h2 {
   color: #f5f5f5;
 }
 #headred {
-  background-color: #c0392b;
+  background-color: #2D9E59;
 }
 #headred * {
   color: white;
@@ -208,6 +208,11 @@ h2 {
 
 #tweeter {
   background-color: #006699;
+  padding: 20px;
+  margin: 0;
+}
+#tweeterer {
+  background-color: #336666 ;
   padding: 20px;
   margin: 0;
 }
@@ -240,6 +245,12 @@ h2 {
 }
 #banner {
   background-color: darkred;
+}
+.h3white {
+  color:white;
+}
+label{
+  color:white;
 }
 
 .down-triangle-gray {
@@ -295,7 +306,7 @@ h2 {
 .slim secondary {
   color: white;
 }
-.h2color h2{
+.h2color h3{
   color: white;
 }
 
@@ -317,6 +328,10 @@ body, html
 .circle {
   border-radius: 1000px;
   border: 12px solid blanchedalmond;
+}
+.circletwo {
+  border-radius: 1000px;
+  border: 12px solid #000033;
 }
 .inline {
   display: inline-block;
