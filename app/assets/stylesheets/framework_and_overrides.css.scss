@@ -102,7 +102,7 @@ footer {
   color: #666;
   overflow: hidden;
   width: 100%;
-  padding: 40px 0;
+  padding: 40px 15px;
   line-height: 1.5;
 
 }
@@ -116,17 +116,17 @@ footer {
 footer {
 
 }
-//footer a {
-//  color: #269BC8;
-//  &:visited {
-//    color:#006699;
-//  }
-//  &:hover {
-//    color: white;
-////    background-color: green;
-//    width: 100%;
-//  }
-//}
+footer a {
+  color: #269BC8;
+  &:visited {
+    color:#006699;
+  }
+  &:hover {
+    color: white;
+//    background-color: green;
+    width: 100%;
+  }
+}
 
 header {
 
