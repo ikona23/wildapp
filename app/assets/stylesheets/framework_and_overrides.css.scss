@@ -95,16 +95,14 @@ body{
 footer {
   @include twelve-columns;
   background-color: #2D2D2D;
-
   bottom: 0px;
   left: 0px;
   width: 100%;
   color: #666;
   overflow: hidden;
   width: 100%;
-  padding: 40px 15px;
+//  padding: 40px 15px;
   line-height: 1.5;
-
 }
 .fullWidth {
   width: 100%;
@@ -113,9 +111,9 @@ footer {
   margin-right: auto;
 //  max-width: initial;
 }
-footer {
 
-}
+
+
 footer a {
   color: #269BC8;
   &:visited {
@@ -355,7 +353,9 @@ p {
 }
 
 
-
+#whitefont {
+  color:white;
+}
 
 
 
