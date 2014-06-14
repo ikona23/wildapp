@@ -92,13 +92,14 @@ section {
 body{
   margin: 0;
 }
-footer {
-  @include twelve-columns;
-  background-color: #2D2D2D;
-  color:white;
-  bottom: 0px;
-  left: 0px;
-}
+//footer {
+//  @include twelve-columns;
+//  background-color: #2D2D2D;
+//  color:white;
+//  bottom: 0px;
+//  left: 0px;
+//  width: 100%;
+//}
 .fullWidth {
   width: 100%;
 
@@ -106,25 +107,26 @@ footer {
   margin-right: auto;
 //  max-width: initial;
 }
-
-
-navigation ul li {
-  color: red;
-  font-weight: bold;
-
+footer {
+  color: #666;
+  overflow: hidden;
+  width: 100%;
+  padding: 40px 0;
+  background: #2D2D2D;
+  line-height: 1.5;
+  text-align: center;
 }
-
-footer a {
-  color: #269BC8;
-  &:visited {
-    color:#006699;
-  }
-  &:hover {
-    color: white;
-//    background-color: green;
-    width: 100%;
-  }
-}
+//footer a {
+//  color: #269BC8;
+//  &:visited {
+//    color:#006699;
+//  }
+//  &:hover {
+//    color: white;
+////    background-color: green;
+//    width: 100%;
+//  }
+//}
 
 header {
 
