@@ -22,13 +22,20 @@
     </header>
 
    <article>
+
        <%= render 'layouts/messages' %>
        <%= yield %>
    </article>
 <!--render footer layout-->
-    <footer>
+
+
+    <footer class="shadow">
       <%= render 'layouts/footer' %>
+
     </footer>
+
+
+
     <!-- Included JS Files (Compressed) -->
     <script src="jquery.js"></script>
     <script src="foundation.min.js"></script>
