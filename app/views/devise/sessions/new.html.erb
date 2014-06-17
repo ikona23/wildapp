@@ -9,7 +9,8 @@
     </div>
 <div class="authform">
   <%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => { :role => 'form'}) do |f| %>
-      <img src="/assets/images/logoreno.png", root_path/>
+
+      <a href="../"><img src = "../assets//images/logoreno.png" ></a>
     <h3>Log in</h3>
     <%= devise_error_messages! %>
     <div class="form-group">
@@ -26,7 +27,7 @@
       <%= f.label :password %>
       <%= f.password_field :password, class: 'form-control' %>
     </div>
-      <%= f.submit 'Log in', :class => '"button radius right"' %>
+      <%= f.submit 'Log in', :class => 'button radius right' %>
       <% if devise_mapping.rememberable? -%>
         <div class="checkbox">
           <%= f.check_box :remember_me %> <%= f.label :remember_me %>

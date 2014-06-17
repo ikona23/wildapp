@@ -14,7 +14,8 @@
   <li><%= link_to 'Edit account', edit_user_registration_path %></li>
 <% else %>
   <li><%= link_to 'Sign up', new_user_registration_path %></li>
-<% end %>
+        <li class="divider"></li>
+    <% end %>
 
 <!--if you sign in as bussines -->
 
@@ -28,7 +29,8 @@
 <% if user_signed_in? %>
     <% if current_user.is_vendor? %>
     <li><%= link_to 'View posted jobs', posts_path %></li>
-<% end %>
+            <li class="divider"></li>
+        <% end %>
     <% end %>
 
 <!--if you sign in as bussines -->
@@ -44,12 +46,14 @@
 <% if user_signed_in? %>
     <% if current_user.is_customer? %>
     <li><%= link_to 'Post new job', new_post_path %></li>
- <% end %>
+            <li class="divider"></li>
+        <% end %>
 <% end %>
 
 <% if user_signed_in? %>
     <% if current_user.is_customer? %>
         <li><%= link_to 'View your posted jobs', posts_path %></li>
+            <li class="divider"></li>
     <% end %>
 <% end %>
 

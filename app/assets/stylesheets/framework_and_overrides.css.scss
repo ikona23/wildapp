@@ -53,13 +53,12 @@
 // apply styles to HTML elements
 // to make views framework-neutral
 main {
-  @include twelve-columns;
-//background-color: black;
-  width: 100%
+
+
   }
 
 section {
-  @extend .row;
+
   margin-top: 20px;
   }
 
@@ -274,7 +273,7 @@ h2 {
   border-width: 30px 35px 0 35px;
   border-color: #34495e transparent transparent transparent;
   position: absolute;
-  left: 47%;
+  left: 48%;
   color: white;
 //  margin: auto;
 //  bottom :-20px;
@@ -298,7 +297,7 @@ h2 {
   border-width: 30px 35px 0 35px;
   border-color: white transparent transparent transparent;
   position: absolute;
-  left: 47%;
+  left: 48%;
   //  margin: auto;
   //  bottom :-20px;
 }
@@ -310,7 +309,7 @@ h2 {
   border-width: 30px 35px 0 35px;
   border-color: #34495e transparent transparent transparent;
   position: absolute;
-  left: 47%;
+  left: 48%;
   //  margin: auto;
   //  bottom :-20px;
 }
@@ -416,7 +415,24 @@ p {
   background-color: lightgray;
 }
 
+.row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5rem;
+}
 
+.columns {
+  position: relative;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  float: left;}
 
+.style_image {
+  max-height: 100px;
+  max_width: 100px;
+}
 
 
