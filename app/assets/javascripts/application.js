@@ -21,3 +21,7 @@ $(function() {
 });
 //$('#TjuvkikModal').foundation('reveal', 'open');
 //$('#ExempelobjektModal').foundation('reveal', 'open');
+//$(document).ready(function () {
+//    alert("hello");
+//});
+
