@@ -24,14 +24,10 @@ gem 'protected_attributes'
 gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'jquery-rails', '>=0.2.5'
 gem 'thor', '>=0.14.4'
-<<<<<<< Updated upstream
-
-=======
 gem 'aws-sdk', '~> 1.0'
 gem 'nokogiri'
 gem 'pdfkit'
 gem 'prawn'
->>>>>>> Stashed changes
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :mri_21, :rbx]
