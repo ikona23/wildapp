@@ -86,10 +86,16 @@
   @extend .radius;
   @extend .tiny;
 }
+<<<<<<< Updated upstream
+=======
+h3 {
+  color:white;
+}
+>>>>>>> Stashed changes
 
 footer {
   @include twelve-columns;
-  background-color: #2D2D2D;
+  background-color: black;
   bottom: 0px;
   left: 0px;
   width: 100%;
@@ -113,6 +119,7 @@ footer a {
 }
 section {
   margin-top: 20px;
+<<<<<<< Updated upstream
 
 }
 .row.fullblue {
@@ -268,4 +275,171 @@ figcaption {
   transition-delay: 0.3s;
   opacity: 1;
   transform: scale(1);
+=======
+
+}
+.row.fullblue {
+  width: 100%;
+  background-color: lightslategray;
+}
+.row.fullgreen {
+  width: 100%;
+  background-color: darkslategray;
+}
+
+.row.fullwhite {
+  width: 100%;
+  height: 50px;
+  background-color: ghostwhite;
+}
+
+h2 {
+  color: white;
+}
+
+.circle {
+  border-radius: 1000px;
+  border: 7px solid white;
+}
+
+square {
+  width:50px;
+  height:50px;
+  border:solid 1px #000;
+  margin:10px;
+  background:url('http://lorempixel.com/100/200') center center no-repeat;
+  background-size:100%;
+}
+
+.row.fullgreeenn {
+  background-color: white;
+}
+
+
+figcaption {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.no-touch figure:hover figcaption, figure.cs-hover figcaption {
+  opacity: 1;
+  -webkit-transform: translate(5px, 5px);
+  -moz-transform: translate(5px, 5px);
+  -ms-transform: translate(5px, 5px);
+  transform: translate(5px, 5px);
+}
+
+.ec-circle{
+  border-radius: 1200px;
+  border: 7px solid white;
+  -webkit-border-radius: 210px;
+  -moz-border-radius: 210px;
+
+
+}
+.ec-circle-hover{
+  box-shadow:
+  inset 0 0 0 0 rgba(0,0,0,0.6),
+  inset 0 0 0 20px #c18167,
+  0 0 10px rgba(0,0,0,0.3);
+}
+
+.ec-circle:hover{
+  box-shadow:
+  inset 0 0 0 0 rgba(0,0,0,0.6),
+  inset 0 0 0 20px #c18167,
+  0 0 10px rgba(0,0,0,0.3);
+}
+
+.cs-text {
+  width: 100%;
+  margin: 120px auto 30px;
+  cursor: default;
+  text-align: center;
+}
+
+.cs-text > span {
+  display: block;
+}
+
+.cs-text-cut {
+  width: 100%;
+//  height: 90px;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.cs-text-cut:first-child {
+  border-top: 1px solid rgba(255,255,255,0.5);
+}
+
+.cs-text-cut:last-child {
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.cs-text-cut span {
+  display: block;
+  line-height: 50%;
+  color: rgba(255,255,255,1);
+//  font-size: 80px;
+//  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+//  margin-top: 6px;
+  font-family: 'Sancreek', cursive;
+  text-shadow: 7px 2px 0 rgba(255,255,255,0.3);
+}
+
+.cs-text-cut:last-child span {
+  margin-top: -84px;
+}
+
+.cs-text-mid {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: 50px;
+  line-height: 50px;
+  text-indent: 20px;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  color: rgba(255,255,255,0.3);
+  text-shadow: 0 0 0 rgba(255,255,255,0.9);
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.cs-text:hover .cs-text-cut:first-child {
+  transform: translateY(-25px);
+  opacity: 0;
+}
+.cs-text:hover .cs-text-cut:last-child {
+  transform: translateY(25px);
+  opacity: 0;
+}
+.cs-text:hover .cs-text-mid {
+  transition-delay: 0.3s;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.content {
+  min-height:850px;
+}
+.row.fullblue {
+  background: #ecf0f1;
+}
+.link {
+  color: white;
+>>>>>>> Stashed changes
 }

@@ -4,7 +4,11 @@
 <nav class="top-bar" data-topbar class="fixed">
   <ul class="title-area">
     <!--<li class="name">-->
+<<<<<<< Updated upstream
     <li class="name"><a href='../'>PETER KONA</a><li class="divider"></li>
+=======
+    <li class="name"><a href="../"><img src =  "../assets/logo.png" ></a><li class="divider"></li>
+>>>>>>> Stashed changes
 </li>
   </ul>
 
@@ -16,6 +20,7 @@
       <!--<li class="name"%= link_to current_user.email,"#" %></li>-->
 
       <!--links to static pages about_us,contact privacy and Faq, with path-->
+<<<<<<< Updated upstream
 
       <li class="name"><%= link_to 'About me', static_pages_about_path%></li>
       <li class="divider"></li>
@@ -23,11 +28,14 @@
       <li class="divider"></li>
 
       <li class="name"><%= link_to 'Contact me', contacts_path%></li>
+=======
+>>>>>>> Stashed changes
       <li class="divider"></li>
       <!--rendering layout from layouts/navigation_links it renders links based on role-->
       <ul class = "right"></ul>
+      <li><%= link_to 'Produkty', products_path %></li>
       <%= render 'layouts/navigation_links' %>
-      <li class="divider"></li>
+
 
     </ul>
   </div>

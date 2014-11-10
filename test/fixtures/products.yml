@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  produkt_kod: 1
+  nazov: MyString
+  farba: MyString
+  velkost: 1
+  mnozstvo: 1
+
+two:
+  produkt_kod: 1
+  nazov: MyString
+  farba: MyString
+  velkost: 1
+  mnozstvo: 1

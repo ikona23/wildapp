@@ -1,0 +1,50 @@
+
+
+<div class="row fullblue">
+  <div class="medium-8 medium-centered columns centered-text">
+  <p>
+    Download:
+    <%= link_to "CSV", products_path(format: "csv") %> |
+    <%= link_to "Excel", products_path(format: "xls") %>
+  </p>
+</div>
+
+  </div>
+  <div class="row fullblue">
+    <div class="medium-8 medium-centered columns centered-text">
+<h1>Zoznam produktov</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nazov</th>
+      <th>Farba</th>
+      <th>Velkost</th>
+      <th>Mnozstvo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+
+        <td><%= product.nazov %></td>
+        <td><%= product.farba %></td>
+        <td><%= product.velkost %></td>
+        <td><%= product.mnozstvo %></td>
+        <td><%= link_to 'Zobraz', product %></td>
+        <td><%= link_to 'Edituj', edit_product_path(product) %></td>
+        <td><%= link_to 'Vymaž', product, method: :delete, data: { confirm: 'Si si istý?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Vlož nový tovar', new_product_path %>
+
+</div>
+    </div>
+    </div>

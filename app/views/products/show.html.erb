@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+
+<p>
+  <strong>Nazov:</strong>
+  <%= @product.nazov %>
+</p>
+
+<p>
+  <strong>Farba:</strong>
+  <%= @product.farba %>
+</p>
+
+<p>
+  <strong>Velkost:</strong>
+  <%= @product.velkost %>
+</p>
+
+<p>
+  <strong>Mnozstvo:</strong>
+  <%= @product.mnozstvo %>
+</p>
+<p id="pdf_link"><%= link_to "Download Invoice (PDF)", product_path(@product, :format => "pdf") %></p>
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>

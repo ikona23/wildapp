@@ -7,12 +7,15 @@
 
   <li><%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %></li>
 <% else %>
+        <li class="divider"></li>
   <li ><%= link_to 'Login', new_user_session_path %></li>
         <li class="divider"></li>
 <% end %>
 <% if user_signed_in? %>
-  <li><%= link_to 'Edit account', edit_user_registration_path %></li>
+  <li><%= link_to 'Zmeň konto', edit_user_registration_path %></li>
 <% else %>
+        <li class="divider"></li>
+
   <li><%= link_to 'Sign up', new_user_registration_path %></li>
         <li class="divider"></li>
     <% end %>
@@ -21,15 +24,16 @@
 
 <% if user_signed_in? %>
     <% if current_user.is_vendor? %>
-  <li><%= link_to 'Welcome', static_pages_contact_path %></li>
+  <li><%= link_to 'Vitajte', static_pages_contact_path %></li>
 <% end %>
-   <% end %>
+   <% end %>ä
+    <li class="divider"></li>
 <!--if you sign in as bussines -->
 
 <% if user_signed_in? %>
     <% if current_user.is_vendor? %>
-    <li><%= link_to 'View posted jobs', posts_path %></li>
-            <li class="divider"></li>
+    <li><%= link_to 'Produkty', products_path %></li>
+
         <% end %>
     <% end %>
 
@@ -37,24 +41,22 @@
 
 <!--<% if user_signed_in? %>-->
     <!--<% if current_user.is_vendor? %>-->
+<<<<<<< Updated upstream
     <!--<li><%= link_to 'Categories', categories_path %></li>-->
+=======
+    <!--<li><%= link_to 'Produkty', products_path %></li>-->
+>>>>>>> Stashed changes
 
     <!--<% end %>-->
 <!--<% end %>-->
 
 <!--if you sign in as customer -->
 
-<% if user_signed_in? %>
-    <% if current_user.is_customer? %>
-    <li><%= link_to 'Post new job', new_post_path %></li>
-            <li class="divider"></li>
-        <% end %>
-<% end %>
 
 <% if user_signed_in? %>
     <% if current_user.is_customer? %>
-        <li><%= link_to 'View your posted jobs', posts_path %></li>
-            <li class="divider"></li>
+        <li><%= link_to 'Produkty', products_path %></li>
+
     <% end %>
 <% end %>
 

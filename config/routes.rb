@@ -1,5 +1,7 @@
 Dream::Application.routes.draw do
 
+  resources :products
+
   get 'static_pages/faq'
 
   get 'static_pages/about'
